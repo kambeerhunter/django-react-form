@@ -15,7 +15,7 @@ Quick start
 5. Install npm packages:
     `npm istall`
 6. Build frontend:
-    `npm run buil`
+    `npm run build`
 7. Change directiry to root and run application:
     ```
     cd ..
