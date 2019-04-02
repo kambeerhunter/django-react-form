@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% bootstrap_messages %}
+
+{% block "content" %}
+  <div class="container mt-5">
+    <form action="" method="post">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+      <button type="submit" class="btn btn-primary">Перевести средства</button>
+    </form>
+  </div>
+{% endblock %}
+
