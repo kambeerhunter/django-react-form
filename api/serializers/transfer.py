@@ -14,7 +14,7 @@ class TransferSerializer(serializers.Serializer):
         try:
             user = User.objects.get(pk=user_pk)
         except:
-            raise serializers.ValidateError(
+            raise serializers.ValidationError(
                 'Не существует такого пользователя')
         if value and value > user.account:
             raise serializers.ValidationError(
